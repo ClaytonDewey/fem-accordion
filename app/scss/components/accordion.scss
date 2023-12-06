@@ -1,0 +1,54 @@
+@use '../util/' as *;
+
+.accordion {
+  &__trigger {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-right: rem(55);
+    color: var(--text);
+    text-align: left;
+    font-family: inherit;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      height: rem(30);
+      width: rem(30);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-image: url(../images/icon-plus.svg);
+      background-repeat: no-repeat;
+    }
+
+    &[aria-expanded='true'] {
+      margin-bottom: rem(24);
+
+      &::after {
+        background-image: url(../images/icon-minus.svg);
+      }
+    }
+
+    @include breakpoint(small) {
+      font-size: rem(18);
+    }
+  }
+
+  &__panel {
+    margin: 0;
+    font-size: rem(14);
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--faq-text);
+  }
+}

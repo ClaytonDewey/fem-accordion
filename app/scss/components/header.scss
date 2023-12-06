@@ -1,0 +1,22 @@
+@use '../util/' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(24);
+
+  img {
+    height: rem(24);
+    width: rem(24);
+    margin-right: rem(24);
+  }
+
+  @include breakpoint(small) {
+    margin-bottom: rem(32);
+
+    img {
+      height: rem(40);
+      width: rem(40);
+    }
+  }
+}

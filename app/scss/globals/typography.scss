@@ -1,0 +1,20 @@
+@use '../util/' as *;
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: rem(32);
+}
+
+@include breakpoint(small) {
+  h1 {
+    margin: 0;
+    font-size: rem(56);
+    font-weight: 700;
+    line-height: normal;
+  }
+}
