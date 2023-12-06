@@ -6,6 +6,7 @@
   max-width: rem(600);
   border-radius: rem(8);
   background-color: var(--white);
+  box-shadow: 0 rem(32) rem(56) 0 var(--shadow-color);
 
   @include breakpoint(small) {
     padding: rem(40);
