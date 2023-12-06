@@ -4,11 +4,12 @@
   margin: rem(142) rem(24) rem(24);
   padding: rem(24);
   max-width: rem(600);
-  border-radius: rem(16);
+  border-radius: rem(8);
   background-color: var(--white);
 
   @include breakpoint(small) {
     padding: rem(40);
     margin: rem(167) auto rem(24);
+    border-radius: rem(16);
   }
 }
