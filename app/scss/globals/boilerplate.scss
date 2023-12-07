@@ -15,14 +15,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background);
-  background-image: url(../../../images/background-pattern-mobile.svg);
+  background-image: url(../images/background-pattern-mobile.svg);
   background-size: contain;
   background-repeat: repeat-x;
   background-position: top center;
   color: var(--text);
 
   @include breakpoint(small) {
-    background-image: url(../../../images/background-pattern-desktop.svg);
+    background-image: url(../images/background-pattern-desktop.svg);
     background-size: auto rem(320);
   }
 }
